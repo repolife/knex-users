@@ -22,6 +22,7 @@ export default {
 		},
 		migrations: {
 			tableName: "knex_migrations",
+      directory: "./src/db/migrations",
 			loadExtensions: [".mjs"],
 		},
 	},

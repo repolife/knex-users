@@ -2,6 +2,8 @@ import { db } from "../../../config/knex.mjs";
 
 export const addNewContact = async (req, res) => {
 	try {
+
+    console.log(req.body);
 		const { firstName, lastName, email, company, phone } = req.body;
 		const [newContact] = await db("contacts")
 			.insert({ firstName, lastName, email, company, phone })
