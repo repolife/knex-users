@@ -1,0 +1,32 @@
+{
+	"name": "project",
+	"version": "1.0.0",
+	"description": "",
+	"main": "app.mjs",
+	"scripts": {
+		"dev": "nodemon src/app.mjs",
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"migrate": "knex migrate:latest",
+		"migrate:rollback": "knex migrate:rollback",
+		"migrate:make": "knex migrate:make",
+		"seed": "knex seed:run",
+		"seed:make": "knex seed:make"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"bcrypt": "^6.0.0",
+		"bcryptjs": "^3.0.3",
+		"body-parser": "^2.2.0",
+		"dotenv": "^17.2.3",
+		"express": "^5.1.0",
+		"jsonwebtoken": "^9.0.2",
+		"knex": "^3.1.0",
+		"nodemon": "^3.1.11",
+		"pg": "^8.16.3"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "2.3.5"
+	}
+}
